@@ -1,0 +1,13 @@
+{
+  "name": "www.cccolt.top",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vue-template-compiler": "^2.7.16",
+    "vuepress": "^1.9.10"
+  }
+}
