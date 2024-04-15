@@ -22,7 +22,7 @@ module.exports = {
             { text: "项目", link: "/projects/" },
             { text: "网络", link: "/proxy/" },
             { text: "教程", link: "/tutorial/" },
-            { text: "Github", link: "https://github.com/zhaoxi-scut" }
+            { text: "Github", link: "https://github.com/zhaoxi-scut/cccolt-web" }
         ],
         sidebar: {
             "/projects/rmvl/": [
