@@ -18,7 +18,7 @@ vmess 协议是一种用于网络代理的协议，它是由 v2ray 项目组设�
 
 <center>
 
-![vmess](/vmess.svg)
+![vmess](/images/vmess.svg)
 <small>图1：vmess 工作原理</small>
 
 </center>

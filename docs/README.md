@@ -1,8 +1,13 @@
 ---
 home: true
-heroImage: /hero.png
-actionText: 这是什么？
-actionLink: /guide
+heroImage: /images/hero.png
+actions:
+  - text: 这是什么？
+    link: /guide
+    type: primary
+  - text: 技术知识
+    link: /tutorial/
+    type: secondary
 features:
 - title: 项目手册
   details: 包含个人项目、团队项目的说明文档
@@ -11,5 +16,5 @@ features:
 - title: 技术知识
   details: 编程语言、工具库、算法等相关技术教程
 
-footer: 由 Cccolt 制作 ❤️
+footer: MIT Licensed | Copyright © 2024 zhaoxi-scut
 ---

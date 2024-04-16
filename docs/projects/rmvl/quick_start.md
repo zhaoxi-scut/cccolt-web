@@ -1,11 +1,12 @@
 # 快速开始
 
-以下内容均可在[此文档](https://cv-rmvl.github.io/master/d1/db4/tutorial_install.html)中找到
+以下内容均可在[此文档](https://cv-rmvl.github.io/docs/master/d1/db4/tutorial_install.html)中找到
 
 ---
 
-> #### 注意
-> 首先确保您已经安装了 OpenCV 和 Eigen3 库
+::: warning
+首先确保您已经安装了 OpenCV 和 Eigen3 库
+:::
 
 ## 快速部署 RMVL 环境
 
@@ -48,4 +49,4 @@ rmvl_version
 
 若显示对应版本号，则说明安装成功
 
-从 RMVL 编写 demo 例程可以参考[文档](https://cv-rmvl.github.io/master/da/d80/tutorial_use.html) 。
+从 RMVL 编写 demo 例程可以参考[文档](https://cv-rmvl.github.io/docs/master/da/d80/tutorial_use.html) 。

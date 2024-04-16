@@ -1,49 +1,46 @@
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress/cli'
+import { viteBundler } from '@vuepress/bundler-vite'
+import {
+  sidebarData,
+  navbarData,
+  headData
+} from './config/index'
 
-module.exports = {
-    title: "Cccolt 个人主页",
-    description: "带你快速了解 Cccolt 的个人信息",
-    head: [
-        ["link", { rel: "icon", href: "/favicon.png" }],
-        ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
-        ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }],
-        [
-            "script", {}, `
-                var _hmt = _hmt || [];
-                (function() {
-                  var hm = document.createElement("script");
-                  hm.src = "https://hm.baidu.com/hm.js?eff1f3112347e09ae4492b92ac49e5eb";
-                  var s = document.getElementsByTagName("script")[0]; 
-                  s.parentNode.insertBefore(hm, s);
-                })();
-            `
-        ]
-    ],
-    themeConfig: {
-        nav: [
-            { text: "首页", link: "/" },
-            { text: "项目", link: "/projects/" },
-            { text: "网络", link: "/proxy/" },
-            { text: "教程", link: "/tutorial/" },
-            { text: "Github", link: "https://github.com/zhaoxi-scut/cccolt-web" }
+export default defineUserConfig({
+  lang: 'zh-CN',
+
+  title: 'Cccolt 个人主页',
+  description: '带你快速了解 Cccolt 的个人信息',
+  head: headData,
+  theme: defaultTheme({
+    hostname: 'https://www.cccolt.top',
+    logo: '/images/favicon.png',
+    navbar: navbarData,
+    sidebar: sidebarData,
+    sidebarDepth: 3,
+    // theme-level locales config
+    locales: {
+      '/': {
+        // custom containers
+        tip: '提示',
+        warning: '注意',
+        danger: '警告',
+        // page meta
+        lastUpdatedText: '上次更新',
+        contributorsText: '贡献者',
+        // 404 page
+        notFound: [
+          '未找到该页面 o(╥﹏╥)o'
         ],
-        sidebar: {
-            "/projects/rmvl/": [
-                "", "quick_start", "doc_navigation"
-            ],
-            "/proxy/": [
-                "", "client", "server"
-            ],
-            "/tutorial/cmake/": [
-                "01", "02", "03", "04", "05", "06", "07", "08", "09"
-            ],
-            "/tutorial/": [
-                "", "cmake"
-            ]
-        },
-        sidebarDepth: 3
-    },
-    extendMarkdown(md) {
-        md.set({ html: true });
-        md.use(require("markdown-it-katex"));
-    },
-}
+        backToHome: '返回首页 ←',
+        // a11y
+        openInNewWindow: '在新窗口打开',
+        toggleColorMode: '切换颜色模式',
+        toggleSidebar: '切换侧边栏',
+      }
+    }
+  }),
+
+  bundler: viteBundler(),
+})

@@ -1,16 +1,20 @@
 {
   "name": "www.cccolt.top",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "Cccolt 个人主页",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "docs:update-package": "npx vp-update",
+    "docs:deploy": "vuepress build docs && bash package-deploy.sh"
   },
   "devDependencies": {
-    "vue-template-compiler": "^2.7.16",
-    "vuepress": "^1.9.10"
-  },
-  "dependencies": {
-    "markdown-it-katex": "^2.0.3"
+    "@vuepress/bundler-vite": "^2.0.0-rc.7",
+    "@vuepress/theme-default": "^2.0.0-rc.11",
+    "vue": "^3.4.0",
+    "vuepress": "^2.0.0-rc.7"
   }
 }

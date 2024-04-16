@@ -6,7 +6,9 @@ RMVL 主仓库为硬件设备的二次开发、网络通信、串口通信以及
 
 ## 库资源
 
+::: tip
 点击[此处](https://github.com/cv-rmvl/rmvl)可查看源码。
+:::
 
 RMVL 的所有功能在设计之初秉持着依赖最小化的原则，非必要不引入除 STL、硬件 SDK、OpenCV 以及 Eigen 3 以外的第三方库，若一旦引入将会以 `3rdparty` 的形式存储在 RMVL 中，并由 CMake 编译选项自动管理构建，这将利于降低初次构建 RMVL 的学习成本。为了提高 RMVL 的隔离性，所有的类、参数变量、全局函数等实体均定义在了 `rm` 命名空间下，例如，若要使用 2 阶 Runge-Kutta 中点公式求解一阶常微分方程，可使用以下代码完成。
 
@@ -27,7 +29,7 @@ RMVL 的主要模块包括数据结构与算法、硬件设备二次开发库、
 
 RMVL 的扩展模块包括由特征 `feature`、特征组合 `combo`、追踪器 `tracker` 和序列组 `group` 组成的 **数据组件** ，由检测和识别模块 `detector`、补偿模块 `compensator`、目标预测模块 `predictor` 和决策模块 `decider` 组成的 **功能模块** ，这些模块分布在项目的 `extra` 文件夹中。
 
-扩展模块是视觉程序处理的主要模块，RMVL 采用类似于责任链的设计模式管理了所有扩展模块，具体细节可参考[此文档](https://cv-rmvl.github.io/master/d2/de3/tutorial_extra_upper_process.html)。
+扩展模块是视觉程序处理的主要模块，RMVL 采用类似于责任链的设计模式管理了所有扩展模块，具体细节可参考[此文档](https://cv-rmvl.github.io/docs/master/d2/de3/tutorial_extra_upper_process.html)。
 
 ### 参数模块
 
@@ -100,7 +102,7 @@ rmvl_generate_module_para(aa)
 
 其中新生成的文件为 `include/rmvlpara/**` 和 `src/a1/para/**`。
 
-有关库资源的内容可参考[此文档](https://cv-rmvl.github.io/master/d1/dfb/intro.html)。
+有关库资源的内容可参考[此文档](https://cv-rmvl.github.io/docs/master/d1/dfb/intro.html)。
 
 ## 插件
 

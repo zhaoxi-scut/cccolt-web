@@ -1,3 +1,11 @@
+# dep and build
 node_modules
-dist
 package-lock.json
+
+# .vuepress
+dist
+.cache
+.temp
+
+# github
+.git-update.log
