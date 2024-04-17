@@ -9,5 +9,8 @@
   "devDependencies": {
     "vue-template-compiler": "^2.7.16",
     "vuepress": "^1.9.10"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3"
   }
 }

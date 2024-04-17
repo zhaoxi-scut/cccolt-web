@@ -4,6 +4,8 @@ module.exports = {
     description: "带你快速了解 Cccolt 的个人信息",
     head: [
         ["link", { rel: "icon", href: "/favicon.png" }],
+        ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
+        ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }],
         [
             "script", {}, `
                 var _hmt = _hmt || [];
@@ -39,5 +41,9 @@ module.exports = {
             ]
         },
         sidebarDepth: 3
-    }
+    },
+    extendMarkdown(md) {
+        md.set({ html: true });
+        md.use(require("markdown-it-katex"));
+    },
 }
