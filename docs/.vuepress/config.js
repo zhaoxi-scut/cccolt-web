@@ -16,6 +16,10 @@ export default defineUserConfig({
   theme: defaultTheme({
     hostname: 'https://www.cccolt.top',
     logo: '/images/favicon.png',
+    docsRepo: 'zhaoxi-scut/cccolt-web',
+    docsBranch: 'master',
+    docsDir: 'docs',
+
     navbar: navbarData,
     sidebar: sidebarData,
     sidebarDepth: 3,
@@ -27,6 +31,7 @@ export default defineUserConfig({
         warning: '注意',
         danger: '警告',
         // page meta
+        editLinkText: '在 GitHub 上编辑此页',
         lastUpdatedText: '上次更新',
         contributorsText: '贡献者',
         // 404 page

@@ -2,29 +2,47 @@ import { defaultTheme } from '@vuepress/theme-default'
 
 export const sidebarData = {
   '/projects/rmvl/': [
-    '/projects/rmvl/',
-    '/projects/rmvl/quick_start',
-    '/projects/rmvl/doc_navigation'
+    {
+      text: 'RMVL',
+      children: ['/projects/rmvl/',
+        '/projects/rmvl/quick_start',
+        '/projects/rmvl/doc_navigation'
+      ]
+  }
   ],
   '/proxy/': [
     '/proxy/',
     '/proxy/client',
     '/proxy/server'
   ],
-  '/tutorial/cmake/': [
-    '/tutorial/cmake/01',
-    '/tutorial/cmake/02',
-    '/tutorial/cmake/03',
-    '/tutorial/cmake/04',
-    '/tutorial/cmake/05',
-    '/tutorial/cmake/06',
-    '/tutorial/cmake/07',
-    '/tutorial/cmake/08',
-    '/tutorial/cmake/09',
-    '/tutorial/cmake/10'
+  '/tutorial/git/': [
+    {
+      text: 'Git 教程',
+      children: [
+        '/tutorial/git/01',
+        '/tutorial/git/02',
+        '/tutorial/git/03'
+      ]
+    }
   ],
-  '/tutorial/': [
-    '/tutorial/',
-    '/tutorial/cmake'
+  '/tutorial/cmake/': [
+    {
+      text: '现代 CMake 教程',
+      children: [
+        '/tutorial/cmake/01',
+        '/tutorial/cmake/02',
+        '/tutorial/cmake/03',
+        '/tutorial/cmake/04',
+        '/tutorial/cmake/05',
+        '/tutorial/cmake/06',
+        '/tutorial/cmake/07',
+        '/tutorial/cmake/08',
+        '/tutorial/cmake/09',
+        '/tutorial/cmake/10',
+        '/tutorial/cmake/11',
+        '/tutorial/cmake/12',
+        '/tutorial/cmake/13'
+      ]
+    }
   ]
 };

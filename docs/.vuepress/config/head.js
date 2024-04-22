@@ -1,4 +1,12 @@
 export const headData = [
+  // icon
+  [
+    'link',
+    {
+      rel: 'icon',
+      href: '/images/favicon.png'
+    }
+  ],
   // mathjax
   [
     'link',

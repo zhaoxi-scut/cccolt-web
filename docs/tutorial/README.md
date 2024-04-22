@@ -6,4 +6,5 @@
 
 ## 工具
 
-- [CMake](./cmake.md)
+- [现代 CMake 教程](cmake/)
+- [版本控制 Git](git/)

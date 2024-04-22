@@ -2,7 +2,9 @@
 
 ## Windows
 
-> 待补充 ...
+::: warning
+待补充 ...
+:::
 
 ## Linux
 
@@ -28,7 +30,7 @@ curl -s https://proxy.cccolt.top/scripts/linux-qv2ray | bash
 
 <center>
 
-![qv2ray-icon-unspported](/images/qv2ray-icon-unspported.png)
+![qv2ray-icon-unspported](/images/proxy/qv2ray-icon-unspported.png)
 
 </center>
 
@@ -36,13 +38,13 @@ curl -s https://proxy.cccolt.top/scripts/linux-qv2ray | bash
 
 <center>
 
-![qv2ray-icon](/images/qv2ray-icon.png)
+![qv2ray-icon](/images/proxy/qv2ray-icon.png)
 
 </center>
 
 双击运行该程序，可打开主界面
 
-![qv2ray-main](/images/qv2ray-main.png)
+![qv2ray-main](/images/proxy/qv2ray-main.png)
 
 点击左上角 `首选项->内核设置`，修改
 
@@ -51,13 +53,13 @@ curl -s https://proxy.cccolt.top/scripts/linux-qv2ray | bash
 
 然后点击 `检查 V2ray 核心设置`，查看内核是否正常，如果提示以下内容
 
-![xray-core-check](/images/xray-core-check.png)
+![xray-core-check](/images/proxy/xray-core-check.png)
 
 则表明内核设置成功，点击右下角 OK 按钮退出并回到主界面。
 
 点击左上角 `分组` 按钮，按照下图指示，依次设置
 
-![qv2ray-sub](/images/qv2ray-sub.png)
+![qv2ray-sub](/images/proxy/qv2ray-sub.png)
 
 1. 修改分组名称，名称随意，可修改为 `我的科学上网`
 2. 点击订阅设置
@@ -69,7 +71,7 @@ curl -s https://proxy.cccolt.top/scripts/linux-qv2ray | bash
 
 回到主界面，可以看到右侧多出了若干节点，这些节点就是对应的代理服务器，双击其中一个即可进行连接，如下图。
 
-![qv2ray-success](/images/qv2ray-success.png)
+![qv2ray-success](/images/proxy/qv2ray-success.png)
 
 鼠标右键对应的节点，也可点击
 
