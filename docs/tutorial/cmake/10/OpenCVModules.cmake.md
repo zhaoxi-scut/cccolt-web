@@ -1,7 +1,7 @@
 # OpenCV 4.8.0 的 OpenCVModules.cmake 文件
 
 ::: tip
-点击[此处](../10.md#_4-2-剖析-opencvconfig-cmake)返回。
+点击[此处](../10.md#_3-3-导出配置文件的基本内容)返回。
 :::
 
 ```cmake
