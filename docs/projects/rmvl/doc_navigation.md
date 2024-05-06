@@ -8,6 +8,7 @@
 
 ### 1.x
 
+- [1.3.0](https://cv-rmvl.github.io/docs/1.3.0) - （[ZIP](https://cv-rmvl.github.io/dl/1.3.0.zip) - 6.23 MB， [TAR](https://cv-rmvl.github.io/dl/1.3.0.tar.xz) - 1.37 MB）
 - [1.2.1](https://cv-rmvl.github.io/docs/1.2.1) - （[ZIP](https://cv-rmvl.github.io/dl/1.2.1.zip) - 6.05 MB， [TAR](https://cv-rmvl.github.io/dl/1.2.1.tar.xz) - 1.23 MB）
 - [1.2.0](https://cv-rmvl.github.io/docs/1.2.0) - （[ZIP](https://cv-rmvl.github.io/dl/1.2.0.zip) - 5.96 MB， [TAR](https://cv-rmvl.github.io/dl/1.2.0.tar.xz) - 4.34 MB）
 - [1.1.1](https://cv-rmvl.github.io/docs/1.1.1) - （[ZIP](https://cv-rmvl.github.io/dl/1.1.1.zip) - 5.63 MB， [TAR](https://cv-rmvl.github.io/dl/1.1.1.tar.xz) - 1.17 MB）
