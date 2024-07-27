@@ -4,11 +4,21 @@ export const sidebarData = {
   '/projects/rmvl/': [
     {
       text: 'RMVL',
-      children: ['/projects/rmvl/',
+      children: [
+        '/projects/rmvl/',
         '/projects/rmvl/quick_start',
         '/projects/rmvl/doc_navigation'
       ]
-  }
+    }
+  ],
+  '/projects/repo': [
+    {
+      text: '个人 Debian 软件源',
+      children: [
+        '/projects/repo/install',
+        '/projects/repo/software',
+      ]
+    }
   ],
   '/proxy/': [
     '/proxy/',
