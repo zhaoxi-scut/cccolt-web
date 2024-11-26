@@ -1,11 +1,9 @@
-import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress/cli'
+import { plumeTheme } from 'vuepress-theme-plume'
+import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
-import {
-  sidebarData,
-  navbarData,
-  headData
-} from './config/index'
+import { headData } from './config/head.js'
+import navbar from './config/navbar.js'
+import notes from './config/sidebar.js'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -13,36 +11,39 @@ export default defineUserConfig({
   title: 'Cccolt 个人主页',
   description: '带你快速了解 Cccolt 的个人信息',
   head: headData,
-  theme: defaultTheme({
+  theme: plumeTheme({
     hostname: 'https://www.cccolt.top',
     logo: '/images/favicon.png',
     docsRepo: 'zhaoxi-scut/cccolt-web',
     docsBranch: 'master',
     docsDir: 'docs',
 
-    navbar: navbarData,
-    sidebar: sidebarData,
-    sidebarDepth: 3,
+    navbar,
+    notes,
+
+    plugins: {
+      shiki: {
+        languages: ['bash', 'json', 'cmake', 'cpp', 'makefile', 'shell']
+      },
+      markdownPower: {
+        bilibili: true
+      }
+    },
+
+    autoFrontmatter: false,
+
     // theme-level locales config
     locales: {
       '/': {
-        // custom containers
-        tip: '提示',
-        warning: '注意',
-        danger: '警告',
         // page meta
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdatedText: '上次更新',
         contributorsText: '贡献者',
         // 404 page
-        notFound: [
-          '未找到该页面 o(╥﹏╥)o'
-        ],
-        backToHome: '返回首页 ←',
-        // a11y
-        openInNewWindow: '在新窗口打开',
-        toggleColorMode: '切换颜色模式',
-        toggleSidebar: '切换侧边栏',
+        notFound: {
+          title: '未找到该页面 o(╥﹏╥)o',
+          linkText: '返回首页 ←'
+        },
       }
     }
   }),

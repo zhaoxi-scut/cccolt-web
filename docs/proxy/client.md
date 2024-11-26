@@ -2,9 +2,13 @@
 
 ## Windows
 
-::: warning
-待补充 ...
-:::
+在浏览器中输入以下网址，可以下载对应的客户端
+
+```txt
+https://proxy.cccolt.top/datas/v2rayN-With-Core.zip
+```
+
+下载完成后，解压到任意目录，双击 `v2rayN.exe` 即可打开客户端，如下图
 
 ## Linux
 
