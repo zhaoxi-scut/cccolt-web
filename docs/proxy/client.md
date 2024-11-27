@@ -68,7 +68,7 @@ curl -s https://proxy.cccolt.top/scripts/linux-qv2ray | bash
 1. 修改分组名称，名称随意，可修改为 `我的科学上网`
 2. 点击订阅设置
 3. 勾选**此分组是一个订阅**
-4. 设置订阅地址为 `https://proxy.cccolt.top/sub/address`
+4. 设置订阅地址为 ~~`https://proxy.cccolt.top/sub/xxx`~~
 5. 设置订阅类型为 `Builtin Subscription Support: Basic Base64`
 6. 更新订阅，如果出现了表示条目不为空的提示信息，则全部勾选 `Yes`
 7. 退出，点击右下角的 OK 按钮 

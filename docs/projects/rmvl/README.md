@@ -12,12 +12,36 @@ RMVL 主仓库为硬件设备的二次开发、网络通信、串口通信以及
 
 RMVL 的所有功能在设计之初秉持着依赖最小化的原则，非必要不引入除 STL、硬件 SDK、OpenCV 以及 Eigen 3 以外的第三方库，若一旦引入将会以 `3rdparty` 的形式存储在 RMVL 中，并由 CMake 编译选项自动管理构建，这将利于降低初次构建 RMVL 的学习成本。为了提高 RMVL 的隔离性，所有的类、参数变量、全局函数等实体均定义在了 `rm` 命名空间下，例如，若要使用 2 阶 Runge-Kutta 中点公式求解一阶常微分方程，可使用以下代码完成。
 
+::: code-tabs
+
+@tab rk2.cpp
+
 ```cpp
-rm::Ode dot_x1 = [](double t, const std::vector<double> &x) { return 2 - x[0] + t; }
-rm::RungeKutta2 rk({dot_x1}); // 构建中点公式
-rk.init(0, {1});              // 设置初值
-rk.solve(0.01, 100);          // 迭代求解
+#include <rmvl/rmvl.hpp>
+
+int main()
+{
+    rm::Ode dot_x1 = [](double t, const std::vector<double> &x) { return 2 - x[0] + t; }
+    rm::RungeKutta2 rk({dot_x1}); // 构建中点公式
+    rk.init(0, {1});              // 设置初值
+    rk.solve(0.01, 100);          // 迭代求解
+}
 ```
+
+@tab rk2.py
+
+```python
+import rm
+
+def dot_x1(t, x):
+    return 2 - x[0] + t
+
+rk = rm.RungeKutta2([dot_x1]) # 构建中点公式
+rk.init(0, [1])               # 设置初值
+rk.solve(0.01, 100)           # 迭代求解
+```
+
+:::
 
 此外，RMVL 提供了便捷的参数管理功能，使用一组 CMake 宏和相应的 `*.para` 文件即可完成参数模块的变量定义、注释、默认值、运行期加载的功能，该功能依赖 OpenCV 的 `cv::FileStorage`。
 

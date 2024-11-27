@@ -23,7 +23,7 @@ export default defineUserConfig({
 
     plugins: {
       shiki: {
-        languages: ['bash', 'json', 'cmake', 'cpp', 'makefile', 'shell']
+        languages: ['bash', 'json', 'cmake', 'cpp', 'makefile', 'shell', 'python']
       },
       markdownPower: {
         bilibili: true

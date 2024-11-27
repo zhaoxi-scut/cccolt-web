@@ -6,4 +6,4 @@
 
 - [项目手册](/projects/)
 - [科学上网](/proxy/)
-- [技术知识](/tutorial)
+- [技术知识](/tutorial/)
