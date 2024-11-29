@@ -9,7 +9,6 @@ export default defineUserConfig({
   lang: 'zh-CN',
 
   title: 'Cccolt 个人主页',
-  description: '带你快速了解 Cccolt 的个人信息',
   head: headData,
   theme: plumeTheme({
     hostname: 'https://www.cccolt.top',

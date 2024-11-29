@@ -1,6 +1,6 @@
 # 快速开始
 
-以下内容均可在[此文档](https://cv-rmvl.github.io/docs/master/d1/db4/tutorial_install.html)中找到
+以下内容均可在[此文档](https://cv-rmvl.github.io/docs/2.x/d1/db4/tutorial_install.html)中找到
 
 ---
 
@@ -26,7 +26,7 @@ sudo apt install cmake cmake-qt-gui cmake-curses-gui
 
 ```bash
 git clone https://github.com/cv-rmvl/rmvl.git
-git checkout 1.2.0
+git checkout 2.1.0
 ```
 
 在 RMVL 项目根目录打开终端，构建并安装 RMVL
@@ -35,8 +35,8 @@ git checkout 1.2.0
 mkdir build
 cd build
 cmake ..
-make -j8
-sudo make install
+cmake --build .
+cmake --install .
 ```
 
 ### 测试安装结果
@@ -49,4 +49,4 @@ rmvl_version
 
 若显示对应版本号，则说明安装成功
 
-从 RMVL 编写 demo 例程可以参考[文档](https://cv-rmvl.github.io/docs/master/da/d80/tutorial_use.html) 。
+从 RMVL 编写 demo 例程可以参考[文档](https://cv-rmvl.github.io/docs/2.x/da/d80/tutorial_use.html) 。
