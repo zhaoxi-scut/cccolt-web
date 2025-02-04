@@ -1,6 +1,7 @@
 # dep and build
 node_modules
 package-lock.json
+.vscode
 
 # .vuepress
 dist

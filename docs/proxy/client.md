@@ -32,19 +32,19 @@ curl -s https://proxy.cccolt.top/scripts/linux-qv2ray | bash
 
 进入你的桌面，应该可以看到一个图标
 
-<center>
+::: center
 
 ![qv2ray-icon-unspported](/images/proxy/qv2ray-icon-unspported.png)
 
-</center>
+:::
 
 右键，点击**允许运行**后，可以看到图标变成了如下形式
 
-<center>
+::: center
 
 ![qv2ray-icon](/images/proxy/qv2ray-icon.png)
 
-</center>
+:::
 
 双击运行该程序，可打开主界面
 
