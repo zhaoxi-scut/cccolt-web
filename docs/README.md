@@ -3,8 +3,12 @@ home: true
 config:
   -
     type: 'hero'
+    full: true
+    background: tint-plate
     hero:
       name: Cccolt 个人主页
+      tagline: Personal Homepage
+      text: 『那些杀不死你的，终将使你更强大』
       actions:
         - text: 这是什么？
           link: /guide
