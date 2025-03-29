@@ -40,7 +40,9 @@ export default defineUserConfig({
         contributorsText: '贡献者',
         // 404 page
         notFound: {
+          code: 404,
           title: '未找到该页面 o(╥﹏╥)o',
+          quote: '不是所有的旅行都有终点，不是所有的 404 都是错误',
           linkText: '返回首页 ←'
         },
       }
