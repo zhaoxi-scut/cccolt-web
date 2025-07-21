@@ -46,17 +46,20 @@ const tutorial = defineNoteConfig({
   link: '/tutorial/',
   sidebar: [
     {
-      text: 'Git 教程',
-      link: 'git/',
+      text: '现代 C++ 教程',
+      icon: 'mdi:language-cpp',
+      link: 'cpp/',
       items: [
-        'git/01',
-        'git/02',
-        'git/03'
+        'cpp/01',
+        'cpp/02',
+        'cpp/03',
+        'cpp/04'
       ],
       collapsed: true
     },
     {
       text: '现代 CMake 教程',
+      icon: 'devicon-plain:cmake',
       link: 'cmake/',
       items: [
         'cmake/01',
@@ -72,6 +75,17 @@ const tutorial = defineNoteConfig({
         'cmake/11',
         'cmake/12',
         'cmake/13'
+      ],
+      collapsed: true
+    },
+    {
+      text: 'Git 教程',
+      icon: 'devicon-plain:git',
+      link: 'git/',
+      items: [
+        'git/01',
+        'git/02',
+        'git/03'
       ],
       collapsed: true
     },
