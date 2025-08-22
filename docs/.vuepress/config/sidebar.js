@@ -53,7 +53,8 @@ const tutorial = defineNoteConfig({
         'cpp/01',
         'cpp/02',
         'cpp/03',
-        'cpp/04'
+        'cpp/04',
+        'cpp/05'
       ],
       collapsed: true
     },
