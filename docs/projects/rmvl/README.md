@@ -53,7 +53,7 @@ RMVL 的主要模块包括数据结构与算法、硬件设备二次开发库、
 
 RMVL 的扩展模块包括由特征 `feature`、特征组合 `combo`、追踪器 `tracker` 和序列组 `group` 组成的 **数据组件** ，由检测和识别模块 `detector`、补偿模块 `compensator`、目标预测模块 `predictor` 和决策模块 `decider` 组成的 **功能模块** ，这些模块分布在项目的 `extra` 文件夹中。
 
-扩展模块是视觉程序处理的主要模块，RMVL 采用类似于责任链的设计模式管理了所有扩展模块，具体细节可参考[此文档](https://cv-rmvl.github.io/docs/master/d2/de3/tutorial_extra_upper_process.html)。
+扩展模块是视觉程序处理的主要模块，RMVL 采用类似于责任链的设计模式管理了所有扩展模块，具体细节可参考[此文档](https://cv-rmvl.github.io/docs/2.x/d2/de3/tutorial_extra_upper_process.html)。
 
 ### 参数模块
 
