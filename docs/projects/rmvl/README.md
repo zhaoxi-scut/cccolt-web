@@ -126,7 +126,7 @@ rmvl_generate_module_para(aa)
 
 其中新生成的文件为 `include/rmvlpara/**` 和 `src/a1/para/**`。
 
-有关库资源的内容可参考[此文档](https://cv-rmvl.github.io/docs/master/d1/dfb/intro.html)。
+有关库资源的内容可参考[此文档](https://cv-rmvl.github.io/docs/2.x/d1/dfb/intro.html)。
 
 ## 插件
 
