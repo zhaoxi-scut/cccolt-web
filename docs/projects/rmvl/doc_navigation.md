@@ -2,7 +2,7 @@
 
 ## 开发中
 
-- 活跃的分支: [2.x](https://cv-rmvl.github.io/docs/2.x), [1.x](https://cv-rmvl.github.io/docs/1.x)
+活跃的分支：[2.x](https://cv-rmvl.github.io/docs/2.x), [1.x](https://cv-rmvl.github.io/docs/1.x)
 
 ## 由 Doxygen 生成的各发行版文档
 
@@ -10,6 +10,8 @@
 
 |    Release 发行版    |             ZIP 压缩包              |               TAR 压缩包               |                              更新日志                              |
 | :------------------: | :---------------------------------: | :------------------------------------: | :----------------------------------------------------------------: |
+| [2.5.0](https://cv-rmvl.github.io/docs/2.5.0) | [点击下载](https://cv-rmvl.github.io/dl/2.5.0.zip) - 12.7 MB | [点击下载](https://cv-rmvl.github.io/dl/2.5.0.tar.xz) - 3.29 MB | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-250) |
+| [2.4.0](https://cv-rmvl.github.io/docs/2.4.0) | [点击下载](https://cv-rmvl.github.io/dl/2.4.0.zip) - 8.78 MB | [点击下载](https://cv-rmvl.github.io/dl/2.4.0.tar.xz) - 2.49 MB | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-240) |
 | [2.3.0](https://cv-rmvl.github.io/docs/2.3.0) | [点击下载](https://cv-rmvl.github.io/dl/2.3.0.zip) - 9.34 MB | [点击下载](https://cv-rmvl.github.io/dl/2.3.0.tar.xz) - 2.16 MB | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-230) |
 | [2.2.0](https://cv-rmvl.github.io/docs/2.2.0) | [点击下载](https://cv-rmvl.github.io/dl/2.2.0.zip) - 8.45 MB | [点击下载](https://cv-rmvl.github.io/dl/2.2.0.tar.xz) - 2.43 MB | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-220) |
 | [2.1.1](https://cv-rmvl.github.io/docs/2.1.1) | [点击下载](https://cv-rmvl.github.io/dl/2.1.1.zip) - 7.78 MB | [点击下载](https://cv-rmvl.github.io/dl/2.1.1.tar.xz) - 2.35 MB | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-211) |
@@ -20,7 +22,8 @@
 
 |    Release 发行版    |             ZIP 压缩包              |               TAR 压缩包                |                              更新日志                              |
 | :------------------: | :---------------------------------: | :-------------------------------------: | :----------------------------------------------------------------: |
-| [1.5.2](https://cv-rmvl.github.io/docs/1.5.2) | [点击下载](https://cv-rmvl.github.io/dl/1.5.2.zip) - 7.23 MB | [点击下载](https://cv-rmvl.github.io/dl/1.5.2.tar.xz) - 1.81 MB  | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-152) |
+| [1.5.3](https://cv-rmvl.github.io/docs/1.5.3) | [点击下载](https://cv-rmvl.github.io/dl/1.5.3.zip) - 7.17 MB | [点击下载](https://cv-rmvl.github.io/dl/1.5.3.tar.xz) - 1.82 MB  | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-153) |
+| [1.5.2](https://cv-rmvl.github.io/docs/1.5.2) | [点击下载](https://cv-rmvl.github.io/dl/1.5.2.zip) - 7.25 MB | [点击下载](https://cv-rmvl.github.io/dl/1.5.2.tar.xz) - 1.82 MB  | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-152) |
 | [1.5.1](https://cv-rmvl.github.io/docs/1.5.1) | [点击下载](https://cv-rmvl.github.io/dl/1.5.1.zip) - 7.23 MB | [点击下载](https://cv-rmvl.github.io/dl/1.5.1.tar.xz) - 5.94 MB  | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-151) |
 | [1.5.0](https://cv-rmvl.github.io/docs/1.5.0) | [点击下载](https://cv-rmvl.github.io/dl/1.5.0.zip) - 6.85 MB | [点击下载](https://cv-rmvl.github.io/dl/1.5.0.tar.xz) - 1.74 MB  | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-150) |
 | [1.4.0](https://cv-rmvl.github.io/docs/1.4.0) | [点击下载](https://cv-rmvl.github.io/dl/1.4.0.zip) - 6.82 MB | [点击下载](https://cv-rmvl.github.io/dl/1.4.0.tar.xz) - 1.76 MB  | [查看](https://github.com/cv-rmvl/rmvl/wiki/ChangeLog#version-140) |

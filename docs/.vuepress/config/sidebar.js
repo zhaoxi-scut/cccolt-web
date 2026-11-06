@@ -14,13 +14,9 @@ const projects = defineNoteConfig({
       ]
     },
     {
-      text: '软件源',
+      text: '托管服务',
       icon: 'solar:database-linear',
-      items: [
-        'repo/',
-        'repo/install',
-        'repo/software',
-      ]
+      link: 'hosting/'
     }
   ]
 });

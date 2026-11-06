@@ -4,6 +4,9 @@
   "description": "Cccolt 个人主页",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
@@ -12,17 +15,43 @@
     "docs:deploy": "vuepress build docs && bash package-deploy.sh"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.24",
-    "sass-embedded": "^1.0.0",
-    "typescript": "^5.8.3",
-    "vue": "^3.4.0",
-    "vuepress": "^2.0.0-rc.24",
-    "vuepress-theme-plume": "^1.0.0-rc.164"
+    "@vuepress/bundler-vite": "2.0.0-rc.30",
+    "katex": "^0.18.10",
+    "sass-embedded": "^1.106.1",
+    "typescript": "^6.0.3",
+    "vue": "^3.5.44",
+    "vuepress": "2.0.0-rc.30",
+    "vuepress-theme-plume": "1.0.0-rc.205"
   },
   "dependencies": {
-    "@vueuse/integrations": "^13.5.0",
-    "focus-trap": "^7.6.5",
+    "@vueuse/integrations": "^14.4.0",
+    "focus-trap": "^8.2.4",
     "mark.js": "^8.11.1",
-    "minisearch": "^7.1.2"
+    "minisearch": "^7.2.0",
+    "ogl": "^1.0.11"
+  },
+  "overrides": {
+    "@mdit/plugin-alert": "1.0.3",
+    "@mdit/plugin-attrs": "1.2.0",
+    "@mdit/plugin-container": "1.0.2",
+    "@mdit/plugin-figure": "1.1.1",
+    "@mdit/plugin-footnote": "1.0.2",
+    "@mdit/plugin-img-lazyload": "1.0.2",
+    "@mdit/plugin-img-mark": "1.0.3",
+    "@mdit/plugin-img-size": "1.0.3",
+    "@mdit/plugin-include": "1.0.4",
+    "@mdit/plugin-katex-slim": "1.0.3",
+    "@mdit/plugin-mark": "2.0.2",
+    "@mdit/plugin-mathjax-slim": "1.1.1",
+    "@mdit/plugin-plantuml": "1.0.4",
+    "@mdit/plugin-sub": "1.0.4",
+    "@mdit/plugin-sup": "1.0.4",
+    "@mdit/plugin-tab": "1.0.4",
+    "@mdit/plugin-tasklist": "1.0.2",
+    "@mdit/plugin-tex": "1.0.2",
+    "@mdit/plugin-uml": "1.0.3",
+    "@vuepress/plugin-markdown-math": {
+      "katex": "$katex"
+    }
   }
 }

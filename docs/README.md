@@ -4,7 +4,7 @@ config:
   -
     type: 'hero'
     full: true
-    background: tint-plate
+    background: orb
     hero:
       name: Cccolt 个人主页
       tagline: Personal Homepage
@@ -22,7 +22,13 @@ config:
       -
         title: 项目手册
         icon: 📚
-        details: 包含个人项目、团队项目的说明文档
+        details: RMVL 机器人操作与视觉库的介绍与使用指南
+        link: /projects/rmvl/
+      -
+        title: 托管服务
+        icon: 📦
+        details: 代码、制品、内网穿透与云端开发服务入口
+        link: /projects/hosting/
       -
         title: 科学上网
         icon: 🌐
@@ -32,5 +38,5 @@ config:
         icon: 🛠
         details: 编程语言、工具库、算法等相关技术教程
 
-footer: MIT Licensed | Copyright © 2024 zhaoxi-scut
+footer: MIT Licensed | Copyright © 2026 zhaoxi-scut
 ---

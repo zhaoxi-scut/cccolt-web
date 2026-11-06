@@ -5,5 +5,6 @@
 ## 网站资源
 
 - [项目手册](/projects/)
+- [托管服务](/projects/hosting/)
 - [科学上网](/proxy/)
 - [技术知识](/tutorial/)

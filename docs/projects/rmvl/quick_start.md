@@ -1,52 +1,48 @@
 # 快速开始
 
-以下内容均可在[此文档](https://cv-rmvl.github.io/docs/2.x/d1/db4/tutorial_install.html)中找到
+## 一键安装
 
----
+根据平台选择安装方式，详细步骤参见 [Linux 配置教程](https://cv-rmvl.github.io/quickstart/linux.html)与 [Windows 配置教程](https://cv-rmvl.github.io/quickstart/win.html)。
 
-::: warning
-首先确保您已经安装了 OpenCV 和 Eigen3 库
-:::
+::: code-tabs
 
-## 快速部署 RMVL 环境
-
-RMVL 使用 CMake 构建，请确保安装了 CMake
-
-可使用以下命令行
+@tab Linux
 
 ```bash
-sudo apt install cmake cmake-qt-gui cmake-curses-gui
+wget https://cv-rmvl.github.io/install -qO - | bash
 ```
 
-获取 CMake，其中 `cmake-qt-gui` 和 `cmake-curses-gui` 分别是 **Qt** 版的 CMake GUI 程序和 **命令行** 版的 CMake GUI 程序。
+@tab Windows（Beta）
 
-### 安装 RMVL
+```powershell
+irm https://cv-rmvl.github.io/install-win | iex
+```
 
-在您觉得合适的地方打开终端，使用命令行输入
+:::
+
+## 从源码构建
+
+需要定制模块或参与开发时，可以从源码安装。准备 C++ 编译器与 CMake，并根据需要启用的模块安装相应依赖。
 
 ```bash
 git clone https://github.com/cv-rmvl/rmvl.git
-git checkout 2.1.0
+cd rmvl
+git checkout 2.5.0
+cmake -S . -B build
+cmake --build build --parallel 8
+cmake --install build
 ```
 
-在 RMVL 项目根目录打开终端，构建并安装 RMVL
+这里以参考手册中的 `2.5.0` 为例，其他版本可从 [Releases](https://github.com/cv-rmvl/rmvl/releases) 选择。安装到系统目录时，根据目录权限使用管理员权限执行安装步骤。
 
-```bash
-mkdir build
-cd build
-cmake ..
-cmake --build .
-cmake --install .
-```
-
-### 测试安装结果
-
-打开终端，输入
+## 验证安装
 
 ```bash
 rmvl_version
 ```
 
-若显示对应版本号，则说明安装成功
+显示对应版本号即说明安装成功，接下来可参考[在项目中使用 RMVL](https://cv-rmvl.github.io/docs/2.x/da/d80/tutorial_use.html)，或查阅[文档导航](doc_navigation.md)。
 
-从 RMVL 编写 demo 例程可以参考[文档](https://cv-rmvl.github.io/docs/2.x/da/d80/tutorial_use.html) 。
+::: info 云端编译
+RMVL / C++ 云端编译服务 `occ.cccolt.top` 暂时停用，当前请在本地安装和运行。其他服务入口见[托管服务](/projects/hosting/)。
+:::
