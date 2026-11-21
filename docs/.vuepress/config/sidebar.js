@@ -1,4 +1,4 @@
-import { defineNoteConfig, defineNotesConfig } from 'vuepress-theme-plume'
+import { defineNoteConfig, defineCollection } from 'vuepress-theme-plume'
 
 const projects = defineNoteConfig({
   dir: 'projects',
@@ -21,23 +21,7 @@ const projects = defineNoteConfig({
   ]
 });
 
-const proxy = defineNoteConfig({
-  dir: 'proxy',
-  link: '/proxy/',
-  sidebar: [
-    {
-      text: '网络代理',
-      icon: 'clarity:network-settings-line',
-      items: [
-        '',
-        'client',
-        'server'
-      ]
-    }
-  ]
-});
-
-const tutorial = defineNoteConfig({
+const tutorial = defineCollection({
   dir: 'tutorial',
   link: '/tutorial/',
   sidebar: [
@@ -106,8 +90,8 @@ const tutorial = defineNoteConfig({
   ]
 });
 
-export default defineNotesConfig({
+export default defineCollection({
   dir: '/',
   link: '/',
-  notes: [projects, proxy, tutorial]
+  notes: [projects, tutorial]
 });

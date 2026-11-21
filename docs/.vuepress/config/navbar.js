@@ -12,11 +12,6 @@ export default defineNavbarConfig([
     link: '/projects/'
   },
   {
-    text: '网络',
-    icon: 'solar:shield-network-linear',
-    link: '/proxy/'
-  },
-  {
     text: '教程',
     icon: 'solar:book-2-linear',
     link: '/tutorial/'
